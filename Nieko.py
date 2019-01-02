@@ -1,34 +1,27 @@
-﻿print('Iveskite simboli')
+﻿print('Iveskite simbolį')
 s = input()
-if(s == '*2'):
-    print('Ivesk skaičiu')
-    p = input()
-elif (s == '*3'):
-    print('Ivesk skaičiu')
-    p = input()
-else:
-    print('Ivesk pirmą skiačiu')
-    p = input()
-    print('Ivesk antra skiačiu')
-    a = input()
+if (s == '^'):
+    print('Ivesk skaičių')
+    p = float(input())
+    print('Ivesk laipsnį')
+    l = float(input())
 
-if(s == '+'):
-      sum = int(p) + int(a)
-      print(sum)
-elif(s == '-'):
-     sum = int(p) - int(a)
-     print(sum)
-elif(s == '/'):
-     sum = int(p) / int(a)
-     print(sum)
-elif(s == '*'):
-     sum = int(p) * int(a)
-     print(sum)
-elif(s == '*2'):
-     sum = int(p) * int(p)
-     print(sum)
-elif (s == '*3'):
-     sum = int(p) * int(p) * int(p)
-     print(sum)
+else:
+    print('Ivesk pirmą skiačių')
+    p = float(input())
+    print('Ivesk antra skiačių')
+    a = float(input())
+
+if (s == '+'):
+    print (p + a)
+elif (s == '-'):
+    print (p - a)
+elif (s == '/'):
+    print(p / a)
+elif (s == '*'):
+    print(p*a)
+elif (s == '^'):
+    print(pow(p, l))
+
 else:
     print("Neteisingas simbolis")
