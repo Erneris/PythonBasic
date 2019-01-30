@@ -7,53 +7,46 @@ from tkinter import Button
 my_window = Tk()
 my_window.title  ("Test")
 my_window.configure (bg='black')
-my_window.geometry("1400x900")
+my_window.geometry("400x400")
 
-button_plus = Button(my_window,text="+",width = 10)
+#Label().grid(row=0)
 
-button_plus.pack()
+#e1 = Entry()
 
-button_1 = Button(my_window,text="1",width = 10)
-#button_1.grid(row=0, column=0)
+#e1.grid(row=0, column=1)
 
-button_1.pack()
+button_plus = Button(my_window,text="+",width = 10,height  = 4).grid(row = 4, column = 1)
 
-button_2 = Button(my_window,text="2",width = 10)
-#button_2.grid(row=1, column=0)
+button_minus = Button(my_window,text="-",width = 10,height  = 4).grid(row = 4, column = 3)
 
-button_2.pack()
+button_multiply = Button(my_window,text="*",width = 10,height  = 4).grid(row = 1, column = 4)
 
-button_3 = Button(my_window,text="3",width = 10)
+button_divide = Button(my_window,text="/",width = 10,height  = 4).grid(row = 2, column = 4)
 
-button_3.pack()
+button_powerof = Button(my_window,text="x^y",width = 10,height  = 4).grid(row = 3, column = 4)
 
-button_4 = Button(my_window,text="4",width = 10)
+button_rootof = Button(my_window,text="√",width = 10,height  = 4).grid(row = 4, column = 4)
 
-button_4.pack()
+button_1 = Button(my_window,text="1",width = 10,height  = 4).grid(row = 1, column = 1)
 
-button_5 = Button(my_window,text="5",width = 10)
+button_2 = Button(my_window,text="2",width = 10,height  = 4).grid(row = 1, column = 2)
 
-button_5.pack()
+button_3 = Button(my_window,text="3",width = 10,height  = 4).grid(row = 1, column = 3)
 
-button_6 = Button(my_window,text="6",width = 10)
+button_4 = Button(my_window,text="4",width = 10,height  = 4).grid(row = 2, column = 1)
 
-button_6.pack()
+button_5 = Button(my_window,text="5",width = 10,height  = 4).grid(row = 2, column = 2)
 
-button_7 = Button(my_window,text="7",width = 10)
+button_6 = Button(my_window,text="6",width = 10,height  = 4).grid(row = 2, column = 3)
 
-button_7.pack()
+button_7 = Button(my_window,text="7",width = 10,height  = 4).grid(row = 3, column = 1)
 
-button_8 = Button(my_window,text="8",width = 10)
+button_8 = Button(my_window,text="8",width = 10,height  = 4).grid(row = 3, column = 2)
 
-button_8.pack()
+button_9 = Button(my_window,text="9",width = 10,height  = 4).grid(row = 3, column = 3)
 
-button_9 = Button(my_window,text="9",width = 10)
+button_0 = Button(my_window,text="0",width = 10,height  = 4).grid(row = 4, column = 2)
 
-button_9.pack()
-
-button_0 = Button(my_window,text="0",width = 10)
-
-button_0.pack()
 
 
 
